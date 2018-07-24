@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,400i,700');
+
+@import './modules/base';
+@import './modules/layout';
+@import './modules/header';
+@import './modules/hero';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  font-size: 17px;
+  line-height: 1.5;
+  color: $black;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+}
+
+.form {
+  height: 97px;
+  background-color: transparent;
+  z-index: 99;
+}
+
+.form .email,
+.form .email-two {
+  width: 400px;
+}
+
+.form input {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.1rem;
+  box-sizing: border-box;
+  height: 50px;
+  padding: 12px;
+  margin: 0;
+  border: none;
+  display: block;
+  float: left;
+  border-radius: 3px 0 0 3px;
+}
+
+.form input:focus {
+  outline: 2px solid #2d2d2d;
+}
+
+.form .submit {
+  width: 130px;
+  color: white;
+  background-color: #2d2d2d;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+  transition: all 0.1s linear;
+}
